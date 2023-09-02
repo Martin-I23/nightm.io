@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>City Music</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<style>
+
+*{
+font-family: sans-serif;
+box-sizing: border-box;
+margin: 0;
+padding:0;
+transition: 0.5s;
+}
+
+body{
+background-color: black;
+}
+
+.navbar{
+background-color: black;
+overflow: hidden;
+-webkit-transition: 2s;
+border-bottom: 40px solid purple;
+}
+
+.navbar:hover{
+border-bottom: 40px dashed cyan;
+transition-duration: 2s;
+border-radius: 33%;
+}
+
+.navbar  img.brand{
+font-size: 30px;
+float: left;
+}
+
+.navbar a{
+color: white;
+-webkit-transition: 0.5s;
+padding: 24px 26px;
+display: inline-block;
+font-size: 23px;
+text-decoration: none;
+}
+
+
+.navbar a:hover{
+transition-duration: 0.5s;
+color: purple;
+text-shadow: 1px 1px 1px white;
+}
+
+.menu{
+background-color: black;
+overflow: hidden;
+box-shadow: 1px 1px 1px 1px cyan;
+}
+
+.menu a{
+color: white;
+-webkit-transition: 0.5s;
+padding: 17px 20px;
+display: inline-block;
+font-size: 23px;
+text-decoration: none;
+}
+
+
+.menu a:hover{
+transition-duration: 0.5s;
+color: cyan;
+text-shadow: 1px 1px 1px purple;
+}
+
+.menu a.right{
+float: right;
+}
+
+
+.sidebar{
+overflow-x: hidden;
+background-color: black;
+color: cyan;
+width:0;
+height: 100%;
+top:0;
+box-shadow: 2px 2px 2px 2px rgb(39, 39, 39);
+position: fixed;
+left:0;
+z-index: 2;
+}
+
+.sidebar a{
+padding: 20px;
+font-size: 21px;
+color: white;
+text-shadow: 1px 2px 1px 1px purple;
+display: block;
+text-decoration: none;
+}
+
+.sidebar a:hover{
+color: cyan;
+}
+
+.sidebar .closebtn{
+right: 60px;
+margin-left: 160px;
+font-size: 21px;
+}
+
+
+.row{
+flex-wrap: flex;
+display: flex;
+}
+
+.sideleft{
+flex: 25%;
+background-color: black;
+padding: 20px;
+align-items: center;
+float: left;
+}
+
+.title h1{
+font-size: 36px;
+text-align: center;
+color: white;
+margin: 5px 5px;
+text-shadow: 1px 1px 1px purple;
+border-bottom: 2px solid white;
+}
+
+.subtitle h2{
+font-size: 25;
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px purple;
+}
+
+.main{
+flex: 50%;
+background-color: black;
+padding: 20px;
+float: left;
+align-items: center;
+}
+
+.main-title h1{
+font-size: 36px;
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px purple;
+border-bottom: 2px solid white;
+}
+
+.sideright{
+flex: 25%;
+float: left;
+background-color: black;
+padding: 20px;
+align-items: center;
+}
+
+
+
+.footer{
+clear: both;
+width: 100%;
+bottom: 0;
+left: 0;
+background-color: black;
+height: 40%;
+color: #dcdcdc;
+right: 0;
+border-top: 2px solid purple;
+padding: 20px;
+text-align: center;
+align-items: center;
+}
+
+a .website {
+color: white;
+text-decoration: underline;
+}
+
+.website a.:hover{
+color: purple;
+}
+
+::-webkit-scrollbar{
+ width: 10px;
+}
+
+::-webkit-scrollbar-track{
+background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+ background-image: linear-gradient(purple, cyan);
+border-radius: 10px;
+box-shadow: 2px 2px 2px 2px white;
+}
+
+</style>
+
+<body>
+
+<div class="navbar">
+<img class="brand" src="thecitymusic.png" width="200px" height="200px">
+<a href="#">TrapMusic</a>
+<a href="#">IndianMusic</a>
+<a href="#">JapaneseTrap</a>
+<a href="#">AmericanRap</a>
+<a href="#">GreekRap</a>
+<a href="#">SpanishStyle</a>
+<a href="#">AsianBeats</a>
+<a href="#">FrenchRap</a>
+<a href="#">Latino</a>
+</div>
+<div class="menu">
+<div class="sidebar" id="myside">
+<a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
+<img src="sub.png" width="200px" height="200px">
+<marquee behaviour="scroll" direction="left" style="background-color:purple; color: cyan; font-size: 18px;">Welcome to City Music! Добре дошли в City Music! Bienvenidos a City Music! Bem vindo a City Music Bienvenutti a City Music</marquee>
+<h2 style="color:white; padding: 20px; text-shadow: 1px 2px 1px 1px purple;">Listen now:</h2>
+<br>
+<hr style="border: 1px solid purple;">
+<a href="#">Mumbai(मुंबई)</a>
+<a href="#">Tokyo(東京)</a>
+<a href="#">Madrid</a>
+<a href="#">Sofia(София)</a>
+<a href="#">New York</a>
+<a href="#">Athens(Αθήνα)</a>
+<a href="#">Paris</a>
+<a href="#">Seoul(서울)</a>
+<br>
+<hr style="border: 1px solid purple;">
+<p style="color:white; padding: 20px; padding: 20px; font-size: 13px; text-shadow: 1px 2px 1px 1px purple;">City Music is a corporative site where you can see a lot of different music styles for listening. Dont't hesitate and start enjoying time with your favourite mix.</p>
+<br>
+<img src="mmm.png" width="100px" height="100px" style="margin-left: 40px;">
+<p style="font-size: 11px; color: white; text-align: center; padding: 20px;">Copyright 2023<sup><i class="ri-copyright-line"></i></sup> City Music</p>
+</div>
+<span style="font-size: 30px; color: white; margin: 5px; padding: 20px; cursor:pointer; margin-left: 10px;" onclick="openNav()"><i class="ri-menu-2-line"></i></span>
+<a href="file:///C:/Users/Ico/OneDrive/Escritorio/City%20Music/nightcitymusic.html"><i class="ri-home-fill"></i></a>
+<a href="https://www.facebook.com/"><i class="ri-facebook-fill"></i></a>
+<a href="https://www.instagram.com/"><i class="ri-instagram-line"></i></a>
+<a href="https://www.instagram.com/"><i class="ri-pinterest-line"></i></a>
+<a href="https://www.youtube.com/"><i class="ri-youtube-fill"></i></a>
+<a class="right" href="#"><i class="ri-question-fill"></i></a>
+<a href="#" class="right"><i class="ri-user-3-fill"></i></a>
+</div>
+
+<marquee behaviour="scroll" direction="left" style="border-bottom: 2px solid pink; border-top: 2px solid purple; color: white; text-shadows: 2px 2px 2px 2px purple; font-size: 48px;">Welcome to City Music! Добре дошли в City Music! Bienvenidos a City Music! Bem vindo a City Music Bienvenutti a City Music</marquee>
+
+<div class="row">
+<div class="sideleft">
+<div class="title">
+<h1>The City Music</h1>
+</div>
+<br>
+<div class="subtitle">
+<h2>Listen theese examples:</h2>
+</div>
+<br>
+<iframe width="100%" height="200" src="https://www.youtube.com/embed/YwjLX8Vlx2U" title="GRILLABEATS - &quot;MANTAP&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br>
+<iframe width="100%" height="200" src="https://www.youtube.com/embed/xLk_o3yqnvA" title="GRILLABEATS - Honda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br>
+<iframe width="100%" height="200" src="https://www.youtube.com/embed/Mvt6glOAfG4" title="GRILLABEATS - Ninja" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br>
+<iframe width="100%" height="200" src="https://www.youtube.com/embed/1GwxM3v-qb8" title="Mente Fuerte - Morena | Μορένα (Official Audio) Prod. Thanasimos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="main">
+<div class="main-title">
+<h1>Listen your favourite songs and artists</h1>
+</div>
+<br><br>
+<h2 style="color: white; font-size: 25px;">TrapCity</h2>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/Aoe1p8ytdK8" title="Ugo Melone - Aqua" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br>
+<h2 style="color: white; font-size: 25px;">GRILLA</h2>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/gRKagfJZbXw" title="GRILLABEATS - &quot;SAINTS&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/sCrO-eWEDU8" title="(HARD) Lil Pump Type Beat - &#39;&#39;RACKS&#39;&#39; ft. Smokepurpp | Free Dark Trap Type Beat 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="sideright">
+<img src="mmm.png" width="100%" height="300">
+<br><br>
+<img src="tfm.png" width="100%" height="600" style="border: 2px solid purple;">
+</div>
+</div>
+
+<div class="footer">
+<img src="brand-logo.png" width="200" height="200">
+<p style="font-size: 15px;"><a class="website" href="#" style="color: white;">thecitymusic.com</a> A Website Made For Music Section Sponsored By YouTube.<br>2023<sup><i class="ri-copyright-line"></i></sup> All rights reserved.</p>
+</div>
+
+</body>
+
+<script>
+function openNav(){
+document.getElementById("myside").style.width = "250px";
+}
+
+function closeNav(){
+document.getElementById("myside").style.width = "0px";
+}
+</script>
+</html>
